@@ -1,0 +1,8 @@
+Este proyecto es consta de un script servidor escrito en sh y un conjunto de páginas web escritas en php
+Adicionalmente hay un banco de sonidos y ritmos precargado en el sistema.
+
+Requisitos:
+-mpg123 instalado 'sudo apt-get install mpg123'
+-Servidor apache configurado y con soporte para PHP
+-Red local de alta velocidad.
+-Permisos de usuario.
