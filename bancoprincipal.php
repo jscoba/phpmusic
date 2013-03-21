@@ -59,4 +59,7 @@ $principal[9]= array(
 	"imagen" => "10.png",
 );
 
+echo sizeof($principal[1]);
+echo $principal[1][nombre];
+
 ?>

@@ -4,6 +4,7 @@
 #PHPMusic -- Javier Sáez de la Coba 2013
 
 if [ -f /tmp/limbo ]; then
+	echo 0  > /tmp/limbo
 	echo
 else
 	touch /tmp/limbo

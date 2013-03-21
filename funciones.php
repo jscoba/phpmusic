@@ -15,7 +15,7 @@ function escribe($number)
 	$result = 0;
 	$f1=fopen('/tmp/limbo','w+');
 	fwrite($f1,$number,2);
-	sleep(1);
+	sleep(0.4);
 	if (fpassthru($f1)==0)
 	{
 		$result = 1;
