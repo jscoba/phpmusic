@@ -1,4 +1,4 @@
-<php
+<?php
 $principal[0]= array(
   "nombre" => "Ritmo Base 1",
 	"archivo" => "1" ,
