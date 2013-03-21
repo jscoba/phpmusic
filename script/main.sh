@@ -26,7 +26,7 @@ while [ $number != 99 ] ; do
 		/usr/bin/mpg123 ${ruta}.mp3 &
 		echo 0 > /tmp/limbo
 	fi
-	sleep 0.5
+	sleep 0.1
 done
 
 rm /tmp/limbo

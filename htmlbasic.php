@@ -11,7 +11,7 @@ function encabezado() { ?>
 <table>
 <tr>
 <td>
-<img src='img/logo.png' />
+<a href="index.php" /><img src='img/logo.png' /></a>
 </td>
 </tr>
 <tr>
@@ -38,6 +38,9 @@ function footer() { ?>
 <tr>
 <td>
 <a href='about.php'> Acerca de ... </a>
+</td>
+<td>
+	<a href='config.php'> Configuración </a>
 </td>
 </tr>
 </table>

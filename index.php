@@ -1,25 +1,35 @@
 <?
 include('htmlbasic.php');
+include('bancoprincipal.php');
 encabezado();
+
+#if(sizeof($principal) % 5 == 0)
+#{
+	$tamano = sizeof($principal);
+	$anchotabla = 5;
+	$altotabla =  (int)($tamano / $anchotabla);
+#}
+
 ?>
-<div id='activación'> 
- <h3> Activación del Servidor </h3>
-	<form name='formulario' id='activ' method='get' action='inicio.php'>
-	<input type='submit' value='Activar servidor' <?  disabled(); ?>>
-	</form>
+<div id='interfaz_principal'>
+<table>
+
+<?
+$k = 0;
+for ($i=0;$i<$altotabla;$i++){
+	print("<tr>");
+	 for($j= 0; $j < $anchotabla; $j++) {
+			print('<td><a href="enviar.php?n='. $principal[$k]['archivo'].'" /><img src="img/principal/'.$principal[$k]['imagen'].'" alt="'.$principal[$k]['nombre'].'" /></a></td>');
+			$k++;
+	 }
+}
+
+?>
+
+</table>
+
 </div>
-<div id='stop'> 
- <h3> Desactivación del Servidor </h3>
-	<form name='formulario' id='desac' method='get' action='desac.php'>
-	<input type='submit' value='Desactivar servidor' <?  enabled(); ?>>
-	</form>
-</div>
-<div id="cambiar modo">
-	<p>Si deseas cambiar el banco de sonidos, leete la documentación correspondiente de como hacerlo</p>
-</div>
-	
 
 <?
 footer();
-
 ?>
