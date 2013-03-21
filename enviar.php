@@ -1,8 +1,8 @@
 <?php
 include('funciones.php');
-echo escribe($_POST['n']);
+echo escribe($_GET['n']);
 ?>
 <script type="text/javascript">
-//window.history.back();
+window.history.back();
 
 </script>

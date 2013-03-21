@@ -4,8 +4,10 @@
 #PHPMusic -- Javier Sáez de la Coba 2013
 
 if [ -f /tmp/limbo ]; then
+	rm -f /tmp/limbo	
+	touch /tmp/limbo
 	echo 0  > /tmp/limbo
-	echo
+	chmod 777 /tmp/limbo
 else
 	touch /tmp/limbo
 	echo 0  > /tmp/limbo

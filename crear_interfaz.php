@@ -15,10 +15,12 @@ encabezado();
 <table>
 
 <?
+$k = 0;
 for ($i=0;$i<$altotabla;$i++){
 	print("<tr>");
 	 for($j= 0; $j < $anchotabla; $j++) {
-			print('<td><a href="enviar.php?n='. $principal[$i+$j]['archivo'].'" /><img src="img/principal/'.$principal[$i+$j]['imagen'].'" alt="'.$principal[$i+$j]['nombre'].'" /></a></td>');
+			print('<td><a href="enviar.php?n='. $principal[$k]['archivo'].'" /><img src="img/principal/'.$principal[$k]['imagen'].'" alt="'.$principal[$k]['nombre'].'" /></a></td>');
+			$k++;
 	 }
 }
 
