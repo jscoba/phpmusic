@@ -21,9 +21,14 @@ echo $number
 
 while [ $number != 99 ] ; do
 	read number < /tmp/limbo
-	if [ $number != 0 ]; then
-		ruta=../songs/${mode}/${number}
-		/usr/bin/mpg123 ${ruta}.mp3 &
+	if [ $number != 98 ];then
+		if [ $number != 0 ]; then
+			ruta=../songs/${mode}/${number}
+			/usr/bin/mpg123 ${ruta}.mp3 &
+			echo 0 > /tmp/limbo
+		fi
+	else
+		killall mpg123
 		echo 0 > /tmp/limbo
 	fi
 	sleep 0.1
