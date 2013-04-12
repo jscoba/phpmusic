@@ -59,4 +59,11 @@ $principal[9]= array(
 	"imagen" => "10.png",
 );
 
+$principal[10] = array(
+	"nombre" => "Parar",
+	"archivo" => "98",
+	"imagen" => "stop.png",
+);
+
+
 ?>
