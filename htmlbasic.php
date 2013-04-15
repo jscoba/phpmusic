@@ -42,6 +42,9 @@ function footer() { ?>
 <td>
 	<a href='config.php'> Configuración </a>
 </td>
+<td>
+	<a href='enviar.php?n=98'> Parar sonidos </a>
+</td>
 </tr>
 </table>
 </body>
